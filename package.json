@@ -1,0 +1,40 @@
+{
+  "name": "biobots_project_api",
+  "version": "1.0.0",
+  "description": "The api for a test project for BioBots",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/herlitzj/biobots_api"
+  },
+  "engines": {
+    "node": ">= 4.5.0"
+  },
+  "author": "Jeff Herlitz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/herlitzj/biobots_api"
+  },
+  "homepage": "https://github.com/herlitzj/biobots_api",
+  "dependencies": {
+    "basic-auth": "^1.0.4",
+    "bluebird": "^3.4.1",
+    "body-parser": "^1.15.1",
+    "change-case": "^3.0.0",
+    "express": "^4.13.4",
+    "forever": "^0.15.1",
+    "http-status-codes": "^1.0.6",
+    "ip-address": "^5.8.0",
+    "jasmine": "^2.4.1",
+    "jasmine-spec-reporter": "^2.5.0",
+    "moment-timezone": "^0.5.4",
+    "node-uuid": "^1.4.7",
+    "promise": "^7.1.1",
+    "request": "^2.60.0",
+    "timekeeper": "^0.1.1",
+    "underscore": "^1.8.3"
+  }
+}
