@@ -6,8 +6,13 @@ function User() {};
 module.exports = User;
 
 User.all = function() {
-  var allUsers = DATABASE.map((data) => data.user_info.email);
-  return _.uniq(allUsers);
+  var allUsers = DATABASE.map((data) => data.user_info);
+  var filteredUsers = []
+  allUsers.filter((user) => {
+  	var userIsNotInFilteredList = filteredUsers.filter((f) => user.email === f.email).length == 0
+  	if(userIsNotInFilteredList) filteredUsers.push(user);
+  })
+  return filteredUsers;
 }
 
 User.getAllPrints = function(email) {
