@@ -3,16 +3,12 @@ var bodyParser = require('body-parser');
 var path = require('path');
 var port = process.env.PORT || 5000;
 var httpStatus = require('http-status-codes');
-var middleware = require('./middlewares/server');
 var userRoutes = require('./controllers/users');
 
 var app = express();
 
 // Middleware
 app.use(bodyParser.json());
-
-// authenticate request
-// app.use(middleware.checkBasicAuth);
 
 // User Routes
 app.use('/users', userRoutes);
